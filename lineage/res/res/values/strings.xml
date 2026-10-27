@@ -5,8 +5,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Label for the Evolution X system components when they are shown to the user. -->
-    <string name="lineageos_system_label">Evolution X System</string>
+    <!-- Label for the ExpressiveOS system components when they are shown to the user. -->
+    <string name="lineageos_system_label">ExpressiveOS System</string>
 
     <!-- Labels for the MODIFY_PROFILES permission. -->
     <string name="permlab_modifyProfiles">modify system profiles</string>
@@ -84,12 +84,12 @@
 
     <!-- About device screen, build date -->
     <string name="build_date">Build date</string>
-    <!-- About device screen, Evolution X API Level -->
-    <string name="lineage_api_level">Evolution X API level</string>
-    <!-- About device screen, Evolution X updates -->
-    <string name="lineage_updates">Evolution X updates</string>
-    <!-- About device screen, Evolution X version -->
-    <string name="lineage_version">Evolution X version</string>
+    <!-- About device screen, ExpressiveOS API Level -->
+    <string name="lineage_api_level">ExpressiveOS API level</string>
+    <!-- About device screen, ExpressiveOS updates -->
+    <string name="lineage_updates">ExpressiveOS updates</string>
+    <!-- About device screen, ExpressiveOS version -->
+    <string name="lineage_version">ExpressiveOS version</string>
     <!-- About device screen, vendor security patch -->
     <string name="lineage_vendor_security_patch">Vendor security patch level</string>
 
