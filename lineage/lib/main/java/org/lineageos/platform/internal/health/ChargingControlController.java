@@ -513,6 +513,18 @@ public class ChargingControlController extends LineageHealthFeature {
             }
         }
 
+        // A mode written straight to LineageSettings (not through setMode()) must
+        // also switch the provider, or a mode the old provider can't do (e.g. limit
+        // while Deadline is active) gets reset to the default below.
+        ChargingControlProvider provider = getProviderForMode(mode);
+        if (provider != null && provider != mCurrentProvider) {
+            if (mCurrentProvider != null) {
+                mCurrentProvider.disable();
+            }
+            mCurrentProvider = provider;
+            Log.i(TAG, "Mode " + mode + " uses " + provider.getClass().getSimpleName());
+        }
+
         if (!isProvideSupportCCMode(mode)) {
             Log.e(TAG, "Current provider does not support mode: " + mode
                     + ", setting to default mode");
